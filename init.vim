@@ -46,6 +46,15 @@ set showmatch
 
 colorscheme NeoSolarized
 
+" whitespace options
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set shiftround
+set smartindent
+
+" clipboard options
 set clipboard=unnamedplus
 inoremap jj <esc>
 inoremap kk <esc>
