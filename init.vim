@@ -28,6 +28,8 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('zchee/deoplete-jedi')
   call dein#add('w0rp/ale')
+  call dein#add('lotabout/skim', { 'build': './install --bin' })
+  call dein#add('lotabout/skim.vim')
   call dein#end()
   call dein#save_state()
 endif
