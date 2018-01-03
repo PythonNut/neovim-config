@@ -39,6 +39,10 @@ set cursorline
 set lazyredraw
 set termguicolors
 set background=dark
+set ruler
+set scrolloff=8
+set showcmd
+set showmatch
 
 colorscheme NeoSolarized
 
