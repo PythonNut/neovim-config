@@ -44,5 +44,6 @@ colorscheme NeoSolarized
 
 set clipboard=unnamedplus
 inoremap jj <esc>
+inoremap kk <esc>
 
 filetype plugin indent on
