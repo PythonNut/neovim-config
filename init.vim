@@ -46,6 +46,9 @@ set showmatch
 
 colorscheme NeoSolarized
 
+" search options
+set ignorecase smartcase
+
 " whitespace options
 set expandtab
 set shiftwidth=2
@@ -56,6 +59,8 @@ set smartindent
 
 " clipboard options
 set clipboard=unnamedplus
+
+" keymaps
 inoremap jj <esc>
 inoremap kk <esc>
 
