@@ -26,6 +26,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add(g:settings.plugin_manager_dir)
   call dein#add("iCyMind/NeoSolarized")
   call dein#add('Shougo/deoplete.nvim')
+  call dein#add('w0rp/ale')
   call dein#end()
   call dein#save_state()
 endif
