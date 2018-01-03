@@ -24,6 +24,7 @@ endif
 if dein#load_state(g:settings.plugins_dir)
   call dein#begin(g:settings.plugins_dir)
   call dein#add(g:settings.plugin_manager_dir)
+  call dein#add("iCyMind/NeoSolarized")
   call dein#end()
   call dein#save_state()
 endif
@@ -36,6 +37,10 @@ endif
 " basic visual options
 set cursorline
 set lazyredraw
+set termguicolors
+set background=dark
+
+colorscheme NeoSolarized
 
 set clipboard=unnamedplus
 inoremap jj <esc>
