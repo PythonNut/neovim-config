@@ -26,6 +26,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add(g:settings.plugin_manager_dir)
   call dein#add("iCyMind/NeoSolarized")
   call dein#add('Shougo/deoplete.nvim')
+  call dein#add('zchee/deoplete-jedi')
   call dein#add('w0rp/ale')
   call dein#end()
   call dein#save_state()
@@ -80,7 +81,7 @@ if !filereadable(g:python3_host_prog)
     endif
     execute '!python3 -m venv '
         \ expand(g:settings.python3_venv_dir)
-    execute printf('!%s -m pip install neovim',
+    execute printf('!%s -m pip install neovim jedi',
         \ g:python3_host_prog)
   else
       echohl WarningMsg | echom "You need to install python3!" | echohl None
