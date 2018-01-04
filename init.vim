@@ -27,6 +27,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add("iCyMind/NeoSolarized")
   call dein#add("simnalamburt/vim-mundo")
   call dein#add("vimlab/split-term.vim")
+  call dein#add("farmergreg/vim-lastplace")
   call dein#add("tmux-plugins/vim-tmux-focus-events")
   call dein#add("easymotion/vim-easymotion")
   call dein#add('Shougo/deoplete.nvim')
@@ -83,12 +84,6 @@ set undofile
 let &undodir = g:settings.config_dir . '/undo'
 let g:mundo_right = 1
 nnoremap U :MundoToggle<CR>
-
-" Remember cursor position between vim sessions
-autocmd BufReadPost *
-      \ if line("'\"") > 0 && line ("'\"") <= line("$") |
-      \   exe "normal! g'\"" |
-      \ endif
 
 " python3 bootstrap
 let g:settings.python_dir = g:settings.config_dir . '/python'
