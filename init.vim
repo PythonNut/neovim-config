@@ -27,6 +27,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add("iCyMind/NeoSolarized")
   call dein#add("simnalamburt/vim-mundo")
   call dein#add("vimlab/split-term.vim")
+  call dein#add("tmux-plugins/vim-tmux-focus-events")
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('zchee/deoplete-jedi')
   call dein#add('w0rp/ale')
@@ -71,6 +72,11 @@ filetype plugin indent on
 " clipboard options
 set clipboard=unnamedplus
 
+" file and backup options
+
+set autochdir
+set autoread
+
 " undo configuration
 set undofile
 let &undodir = g:settings.config_dir . '/undo'
@@ -107,4 +113,3 @@ nnoremap ]<Space> o<Esc>
 nnoremap [<Space> O<Esc>
 inoremap jj <esc>
 inoremap kk <esc>
-set autochdir
