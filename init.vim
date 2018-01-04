@@ -25,6 +25,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#begin(g:settings.plugins_dir)
   call dein#add(g:settings.plugin_manager_dir)
   call dein#add("iCyMind/NeoSolarized")
+  call dein#add("simnalamburt/vim-mundo")
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('zchee/deoplete-jedi')
   call dein#add('w0rp/ale')
@@ -71,6 +72,12 @@ set clipboard=unnamedplus
 " keymaps
 inoremap jj <esc>
 inoremap kk <esc>
+
+" undo configuration
+set undofile
+let &undodir = g:settings.config_dir . '/undo'
+let g:mundo_right = 1
+nnoremap U :MundoToggle<CR>
 
 " python3 bootstrap
 let g:settings.python_dir = g:settings.config_dir . '/python'
