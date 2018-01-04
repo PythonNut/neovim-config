@@ -28,6 +28,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add("simnalamburt/vim-mundo")
   call dein#add("vimlab/split-term.vim")
   call dein#add("tmux-plugins/vim-tmux-focus-events")
+  call dein#add("easymotion/vim-easymotion")
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('zchee/deoplete-jedi')
   call dein#add('w0rp/ale')
@@ -112,6 +113,10 @@ endif
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+
+" easymotion
+
+nmap <Space> <Plug>(easymotion-prefix)
 
 " bindings
 "
