@@ -104,3 +104,8 @@ endif
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
+" bindings
+"
+nnoremap ]<Space> o<Esc>
+nnoremap [<Space> O<Esc>
+set autochdir
