@@ -48,6 +48,8 @@ set ruler
 set scrolloff=8
 set showcmd
 set showmatch
+set splitbelow
+set splitright
 
 colorscheme NeoSolarized
 
