@@ -52,6 +52,7 @@ set showcmd
 set showmatch
 set splitbelow
 set splitright
+set mouse=a
 
 colorscheme NeoSolarized
 
