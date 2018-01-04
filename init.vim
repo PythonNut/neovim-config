@@ -83,6 +83,12 @@ let &undodir = g:settings.config_dir . '/undo'
 let g:mundo_right = 1
 nnoremap U :MundoToggle<CR>
 
+" Remember cursor position between vim sessions
+autocmd BufReadPost *
+      \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+      \   exe "normal! g'\"" |
+      \ endif
+
 " python3 bootstrap
 let g:settings.python_dir = g:settings.config_dir . '/python'
 let g:settings.python3_venv_dir = g:settings.python_dir . '/python3_env'
