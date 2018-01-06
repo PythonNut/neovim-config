@@ -31,6 +31,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add("tmux-plugins/vim-tmux-focus-events")
   call dein#add("easymotion/vim-easymotion")
   call dein#add('Shougo/deoplete.nvim')
+  call dein#add('Shougo/denite.nvim')
   call dein#add('zchee/deoplete-jedi')
   call dein#add('w0rp/ale')
   call dein#add('lotabout/skim', { 'build': './install --bin' })
@@ -113,9 +114,18 @@ let g:deoplete#enable_at_startup = 1
 
 nmap <Space> <Plug>(easymotion-prefix)
 
+" denite
+call denite#custom#map('_', "\<Tab>", '<denite:do_action:default>')
+call denite#custom#map('_', "\<C-z>", '<denite:choose_action>')
+
+nnoremap <Leader>b :Denite buffer<Return>
+nnoremap <Leader>f :Denite file<Return>
+nnoremap <Leader>/ :Denite line<Return>
+nnoremap <Space><Space> :Denite command<Return>
+
 " bindings
-"
 nnoremap ]<Space> o<Esc>
 nnoremap [<Space> O<Esc>
 inoremap jj <esc>
 inoremap kk <esc>
+
