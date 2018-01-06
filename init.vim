@@ -36,6 +36,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add('w0rp/ale')
   call dein#add('lotabout/skim', { 'build': './install --bin' })
   call dein#add('lotabout/skim.vim')
+  call dein#add('lambdalisue/suda.vim')
   call dein#end()
   call dein#save_state()
 endif
