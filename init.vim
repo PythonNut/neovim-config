@@ -82,6 +82,9 @@ set clipboard=unnamedplus
 
 set autochdir
 set autoread
+set autowrite
+au FocusGained * :checktime
+au FocusLost * silent! wa
 
 " undo configuration
 set undofile
