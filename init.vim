@@ -85,6 +85,9 @@ set autoread
 
 " undo configuration
 set undofile
+set undolevels=1000
+set undoreload=10000
+
 let &undodir = g:settings.config_dir . '/undo'
 let g:mundo_right = 1
 nnoremap U :MundoToggle<CR>
