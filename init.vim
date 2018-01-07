@@ -37,6 +37,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add('lotabout/skim', { 'build': './install --bin' })
   call dein#add('lotabout/skim.vim')
   call dein#add('lambdalisue/suda.vim')
+  call dein#add('bfredl/nvim-miniyank')
   call dein#end()
   call dein#save_state()
 endif
@@ -130,3 +131,12 @@ nnoremap [<Space> O<Esc>
 inoremap jj <esc>
 inoremap kk <esc>
 
+" nvim-miniyank
+let g:miniyank_maxitems = 100
+let g:miniyank_filename = g:settings.config_dir . "/.miniyank.mpack"
+
+map p <Plug>(miniyank-autoput)
+map P <Plug>(miniyank-autoPut)
+map <C-p> <Plug>(miniyank-cycle)
+
+nnoremap <Leader>p :Denite miniyank<Return>
