@@ -123,6 +123,7 @@ call denite#custom#map('_', "\<C-z>", '<denite:choose_action>')
 
 nnoremap <Leader>b :Denite buffer<Return>
 nnoremap <Leader>f :Denite file<Return>
+nnoremap <Leader>r :Denite file_old<Return>
 nnoremap <Leader>/ :Denite line<Return>
 nnoremap <Space><Space> :Denite command<Return>
 
