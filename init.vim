@@ -38,6 +38,7 @@ if dein#load_state(g:settings.plugins_dir)
   call dein#add('lotabout/skim.vim')
   call dein#add('lambdalisue/suda.vim')
   call dein#add('bfredl/nvim-miniyank')
+  call dein#add('jiangmiao/auto-pairs')
   call dein#end()
   call dein#save_state()
 endif
