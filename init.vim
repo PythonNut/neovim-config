@@ -85,6 +85,11 @@ set autoread
 set autowrite
 au FocusGained * :checktime
 au FocusLost * silent! wa
+let &backupdir = g:settings.config_dir . '/backup//'
+let &directory = g:settings.config_dir . '/swap//'
+if !isdirectory(&backupdir)
+  call mkdir(&backupdir)
+endif
 
 " undo configuration
 set undofile
